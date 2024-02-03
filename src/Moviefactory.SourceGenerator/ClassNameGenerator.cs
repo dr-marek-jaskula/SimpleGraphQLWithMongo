@@ -41,7 +41,10 @@ public class ClassNameGenerator : IIncrementalGenerator
             bldr.Append($"      \"{classDisplayString}\",");
         }
 
-        if (bldr.Length > 0) bldr.Length--;
+        if (bldr.Length > 0)
+        {
+            bldr.Length--;
+        }
 
         var code = $$"""
       namespace SampleSourceGenerator

@@ -7,19 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4FC6502E-BBC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{78CB8B50-C725-4651-8373-72D8E04A596B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movefactory.Runner", "src\Movefactory.Runner\Movefactory.Runner.csproj", "{FA8832D8-0E39-44C7-B2E6-EE6110A791E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movefactory.Runner", "src\Movefactory.Runner\Movefactory.Runner.csproj", "{FA8832D8-0E39-44C7-B2E6-EE6110A791E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moviefactory.Domain", "src\Moviefactory.Domain\Moviefactory.Domain.csproj", "{B813BAC0-FD6A-49D3-853F-7D65816014C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moviefactory.Domain", "src\Moviefactory.Domain\Moviefactory.Domain.csproj", "{B813BAC0-FD6A-49D3-853F-7D65816014C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moviefactory.Application", "src\Moviefactory.Application\Moviefactory.Application.csproj", "{7A835DA9-7028-4AC2-A30A-621326BE8C25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moviefactory.Application", "src\Moviefactory.Application\Moviefactory.Application.csproj", "{7A835DA9-7028-4AC2-A30A-621326BE8C25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moviefactory.Persistence", "src\Moviefactory.Persistence\Moviefactory.Persistence.csproj", "{AB7EE794-94DD-4172-84C6-CCF05A3C23E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moviefactory.Persistence", "src\Moviefactory.Persistence\Moviefactory.Persistence.csproj", "{AB7EE794-94DD-4172-84C6-CCF05A3C23E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moviefactory.Infrastructure", "src\Moviefactory.Infrastructure\Moviefactory.Infrastructure.csproj", "{E9BF7AC9-32E6-4699-8AC7-B525D5C3DC84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moviefactory.Infrastructure", "src\Moviefactory.Infrastructure\Moviefactory.Infrastructure.csproj", "{E9BF7AC9-32E6-4699-8AC7-B525D5C3DC84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moviefactory.Presentation", "src\Moviefactory.Presentation\Moviefactory.Presentation.csproj", "{D38086EF-E813-4C9E-A399-012AF250E717}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moviefactory.Presentation", "src\Moviefactory.Presentation\Moviefactory.Presentation.csproj", "{D38086EF-E813-4C9E-A399-012AF250E717}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moviefactory.SourceGenerator", "src\Moviefactory.SourceGenerator\Moviefactory.SourceGenerator.csproj", "{7634DE6B-453C-4737-8821-662B9F332390}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moviefactory.SourceGenerator", "src\Moviefactory.SourceGenerator\Moviefactory.SourceGenerator.csproj", "{7634DE6B-453C-4737-8821-662B9F332390}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
