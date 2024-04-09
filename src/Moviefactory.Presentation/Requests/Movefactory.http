@@ -1,0 +1,7 @@
+@Movefactory.Runner_HostAddress = https://localhost:7212
+
+GET {{Movefactory.Runner_HostAddress}}/movies?count=2
+
+###
+
+GET {{Movefactory.Runner_HostAddress}}/movies/Dick%20Johnson%20Is%20Dead
