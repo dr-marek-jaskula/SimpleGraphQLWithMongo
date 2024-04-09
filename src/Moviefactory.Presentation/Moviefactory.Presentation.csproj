@@ -7,13 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="GraphQL\Mutations\**" />
     <Compile Remove="OpenApi\**" />
+    <EmbeddedResource Remove="GraphQL\Mutations\**" />
     <EmbeddedResource Remove="OpenApi\**" />
+    <None Remove="GraphQL\Mutations\**" />
     <None Remove="OpenApi\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="GraphQL\Mutations\" />
   </ItemGroup>
 
 	<ItemGroup>
@@ -21,6 +20,10 @@
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.1" />
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.2" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Moviefactory.Domain\Moviefactory.Domain.csproj" />
 	</ItemGroup>
 
 
