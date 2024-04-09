@@ -21,7 +21,7 @@ public sealed class Movie
     public string ShowId { get; set; } = showId;
     public string Type { get; set; } = type;
     public string Title { get; set; } = title;
-    public string Director { get; set; } = director;
+    public string? Director { get; set; } = director;
     public string Country { get; set; } = country;
     public string DateAdded { get; set; } = dateAdded;
     public int ReleaseYear { get; set; } = releaseYear;

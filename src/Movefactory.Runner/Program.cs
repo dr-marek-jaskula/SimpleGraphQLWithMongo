@@ -5,7 +5,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services
     .RegisterAppOptions()
-    .RegisterPersistenceLayer(builder.Environment);
+    .RegisterPersistenceLayer(builder.Environment)
+    .RegisterPresentationLayer();
 
 var app = builder.Build();
 

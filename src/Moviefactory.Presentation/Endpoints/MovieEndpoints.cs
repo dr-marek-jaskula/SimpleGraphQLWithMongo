@@ -11,9 +11,6 @@ public static class MovieEndpoints
     public static WebApplication Add(WebApplication app)
     {
         var group = app.MapGroup("/movies")
-            //.RequireCors("MoviesCorsPolicy")
-            //.RequireAuthorization()
-            //.RequireRateLimiting("LimitPolicy")
             .WithOpenApi();
 
         group.MapGet("/", GetMovies)
