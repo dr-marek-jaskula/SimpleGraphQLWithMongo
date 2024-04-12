@@ -13,8 +13,4 @@
     <ProjectReference Include="..\Moviefactory.Presentation\Moviefactory.Presentation.csproj" />
   </ItemGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\SampleGenerator\SampleGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
-	</ItemGroup>
-	
 </Project>
