@@ -1,5 +1,5 @@
-# SourceGeneratorUniversity
+# SimpleGrapthQLWithMongo
 
-To use the Source Generations using VisualStudio 2022, add the following component.
+This is a simple application that utilizes GraphQL (by HotChocolate) and some minimal API endpoints for comparison purposes.
 
-Then, ping the Syntax Visualizer, that will help use with source generation.
+MongoDB was chosen as the persistence technology, and the domain is kept as simple as possible.
