@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
-using Moviefactory.Presentation.Endpoints;
 using Moviefactory.Presentation.GraphQL.Queries;
+using Moviefactory.Presentation.Registration;
 
 namespace Microsoft.Extensions.DependencyInjection;
 
@@ -27,6 +27,6 @@ public static class PresentationLayerRegistration
 
         app.MapGraphQL();
 
-        return MovieEndpoints.Add(app);
+        return EndpointRegistration.RegisterEndpoints(app);
     }
 }
