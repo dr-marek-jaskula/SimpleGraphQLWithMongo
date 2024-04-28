@@ -9,7 +9,7 @@ namespace Moviefactory.Presentation.Endpoints.Movies;
 
 public sealed class GetMoviesEndpoint : IEndpoint<MovieEndpointGroup>
 {
-    public void RegisterEndpoint(IEndpointRouteBuilder app)
+    public static void RegisterEndpoint(IEndpointRouteBuilder app)
     {
         app.MapGet("/", GetMovies)
             .WithDescription("Get specified number of movies.")

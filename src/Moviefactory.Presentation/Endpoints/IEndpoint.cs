@@ -9,5 +9,5 @@ public interface IEndpoint<TEndpointGroup> : IEndpoint
 
 public interface IEndpoint
 {
-    void RegisterEndpoint(IEndpointRouteBuilder app);
+    static abstract void RegisterEndpoint(IEndpointRouteBuilder app);
 }
