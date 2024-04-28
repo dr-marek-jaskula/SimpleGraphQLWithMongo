@@ -6,7 +6,7 @@ namespace Moviefactory.Presentation.Endpoints.Movies;
 
 public class MovieEndpointGroup : IEndpointGroup
 {
-    public IEndpointRouteBuilder RegisterEndpointGroup(IEndpointRouteBuilder app)
+    public static IEndpointRouteBuilder RegisterEndpointGroup(IEndpointRouteBuilder app)
     {
         return app.MapGroup("/movies")
             .WithOpenApi()

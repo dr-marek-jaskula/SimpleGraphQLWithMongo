@@ -13,20 +13,17 @@ public static class EndpointRegistration
         foreach (var endpointType in endpointTypes)
         {
             var endpointGroup = GetEndpointGroupType(endpointType);
-            var endpointRegisterMethod = endpointType.GetMethod(nameof(IEndpoint.RegisterEndpoint))!;
-            var endpointInstance = Activator.CreateInstance(endpointType)!;
+            var endpointRegisterMethod = endpointType.GetStaticMethod(nameof(IEndpoint.RegisterEndpoint));
 
             if (endpointGroup is null)
             {
-                endpointRegisterMethod.Invoke(endpointInstance, [app]);
+                endpointRegisterMethod.Invoke(null, [app]);
                 continue;
             }
 
-            var endpointGroupRegisterMethod = endpointGroup.GetMethod(nameof(IEndpointGroup.RegisterEndpointGroup))!;
-            var endpointGroupInstance = (IEndpointGroup)Activator.CreateInstance(endpointGroup)!;
-
-            var routeGroupBuilder = endpointGroupRegisterMethod.Invoke(endpointGroupInstance, [app]);
-            endpointRegisterMethod.Invoke(endpointInstance, [routeGroupBuilder]);
+            var endpointGroupRegisterMethod = endpointGroup.GetStaticMethod(nameof(IEndpointGroup.RegisterEndpointGroup));
+            var routeGroupBuilder = endpointGroupRegisterMethod.Invoke(null, [app]);
+            endpointRegisterMethod.Invoke(null, [routeGroupBuilder]);
         }
 
         return app;
@@ -48,5 +45,10 @@ public static class EndpointRegistration
             .DefinedTypes
             .Where(type => type is { IsAbstract: false, IsInterface: false } && type.IsAssignableTo(typeof(IEndpoint)))
             .ToArray();
+    }
+
+    private static MethodInfo GetStaticMethod(this Type type, string name)
+    {
+        return type.GetMethod(name, BindingFlags.Static | BindingFlags.Public)!;
     }
 }

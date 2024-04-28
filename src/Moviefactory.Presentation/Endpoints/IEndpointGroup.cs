@@ -4,5 +4,5 @@ namespace Moviefactory.Presentation.Endpoints;
 
 public interface IEndpointGroup
 {
-    IEndpointRouteBuilder RegisterEndpointGroup(IEndpointRouteBuilder app);
+    static abstract IEndpointRouteBuilder RegisterEndpointGroup(IEndpointRouteBuilder app);
 }

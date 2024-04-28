@@ -8,7 +8,7 @@ namespace Moviefactory.Presentation.Endpoints.Movies;
 
 public sealed class GetMovieByTitleEndpoint : IEndpoint<MovieEndpointGroup>
 {
-    public void RegisterEndpoint(IEndpointRouteBuilder app)
+    public static void RegisterEndpoint(IEndpointRouteBuilder app)
     {
         app.MapGet("/{title}", GetMovieByTitle)
             .WithDescription("Get movie by title.")
